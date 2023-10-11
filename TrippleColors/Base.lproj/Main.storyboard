@@ -30,7 +30,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="Start">
                                             <attributes>
-                                                <font key="NSFont" size="48" name=".SFNS-Regular"/>
+                                                <font key="NSFont" metaFont="system" size="48"/>
                                                 <font key="NSOriginalFont" size="12" name="Helvetica"/>
                                             </attributes>
                                         </fragment>
@@ -40,42 +40,44 @@
                                     <action selector="pushhButtonStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eRF-8z-ms6"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cuA-u5-7Y6" userLabel="yellowLights">
-                                <rect key="frame" x="155" y="368" width="120" height="120"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="DKU-pV-xMQ"/>
-                                    <constraint firstAttribute="width" constant="120" id="YAe-yh-5vd"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uLR-Fk-TaQ" userLabel="greenLights">
-                                <rect key="frame" x="155" y="564" width="120" height="120"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="QBd-jT-Wws"/>
-                                    <constraint firstAttribute="width" constant="120" id="Rxu-9z-YVo"/>
-                                </constraints>
-                            </view>
-                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fy7-5x-zoy" userLabel="redLights">
-                                <rect key="frame" x="155" y="172" width="120" height="120"/>
-                                <color key="backgroundColor" red="1" green="0.27831997879999998" blue="0.25100640769999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="Dso-gw-RPp"/>
-                                    <constraint firstAttribute="height" constant="120" id="M34-kC-D53"/>
-                                </constraints>
-                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="78" translatesAutoresizingMaskIntoConstraints="NO" id="Yyp-80-kLg">
+                                <rect key="frame" x="155" y="137" width="120" height="516"/>
+                                <subviews>
+                                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fy7-5x-zoy" userLabel="redLights">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                        <color key="backgroundColor" red="1" green="0.27831997879999998" blue="0.25100640769999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="AzF-EY-68H"/>
+                                            <constraint firstAttribute="height" constant="120" id="MOM-sK-Uti"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cuA-u5-7Y6" userLabel="yellowLights">
+                                        <rect key="frame" x="0.0" y="198" width="120" height="120"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="inx-lU-dYx"/>
+                                            <constraint firstAttribute="width" constant="120" id="isW-nw-dNs"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uLR-Fk-TaQ" userLabel="greenLights">
+                                        <rect key="frame" x="0.0" y="396" width="120" height="120"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="JgD-dF-nKp"/>
+                                            <constraint firstAttribute="width" constant="120" id="RdG-iS-cav"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
-                            <constraint firstItem="cuA-u5-7Y6" firstAttribute="top" secondItem="Fy7-5x-zoy" secondAttribute="bottom" constant="76" id="7iM-11-l5b"/>
-                            <constraint firstItem="eTz-sX-7Qa" firstAttribute="top" secondItem="uLR-Fk-TaQ" secondAttribute="bottom" constant="55" id="B4X-op-1zd"/>
-                            <constraint firstItem="eTz-sX-7Qa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JTh-ul-L2D"/>
-                            <constraint firstItem="uLR-Fk-TaQ" firstAttribute="top" secondItem="cuA-u5-7Y6" secondAttribute="bottom" constant="76" id="Q3J-6h-PTD"/>
-                            <constraint firstItem="uLR-Fk-TaQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TOQ-nu-SvS"/>
-                            <constraint firstItem="Fy7-5x-zoy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="djv-p7-HY1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eTz-sX-7Qa" secondAttribute="bottom" constant="49" id="f3D-gC-4EW"/>
-                            <constraint firstItem="cuA-u5-7Y6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qcn-cO-BZG"/>
+                            <constraint firstItem="eTz-sX-7Qa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Lo-WY-Gf8"/>
+                            <constraint firstItem="Yyp-80-kLg" firstAttribute="top" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="78" id="Huj-6O-Uot"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="eTz-sX-7Qa" secondAttribute="bottom" constant="49" id="f3D-gC-4EW"/>
+                            <constraint firstItem="Yyp-80-kLg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kB8-ar-Rj8"/>
+                            <constraint firstItem="eTz-sX-7Qa" firstAttribute="top" relation="lessThanOrEqual" secondItem="Yyp-80-kLg" secondAttribute="bottom" constant="86" id="pYW-iq-Bzl"/>
                         </constraints>
                     </view>
                     <connections>
@@ -87,7 +89,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="46.046511627906973" y="-2.5751072961373391"/>
+            <point key="canvasLocation" x="-78.139534883720927" y="37.982832618025753"/>
         </scene>
     </scenes>
     <resources>
@@ -95,7 +97,7 @@
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
