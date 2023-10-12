@@ -14,19 +14,25 @@ class ViewController: UIViewController {
     @IBOutlet var greenLights: UIView!
     @IBOutlet var startButton: UIButton!
     
+    var red = true
+    var yellow = false
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         redLights.alpha = 0.3
         yellowLights.alpha = 0.3
         greenLights.alpha = 0.3
-        redLights.layer.cornerRadius = 60
-        yellowLights.layer.cornerRadius = 60
-        greenLights.layer.cornerRadius = 60
+      
        
     }
-    var red = true
-    var yellow = false
-    
+    override func viewWillLayoutSubviews() {
+        redLights.layer.cornerRadius = redLights.frame.width / 2
+        yellowLights.layer.cornerRadius = redLights.frame.width / 2
+        greenLights.layer.cornerRadius = redLights.frame.width / 2
+        
+     
+    }
     @IBAction func pushhButtonStart(_ sender: Any) {
         startButton.setTitle("Next Light", for: .normal)
         

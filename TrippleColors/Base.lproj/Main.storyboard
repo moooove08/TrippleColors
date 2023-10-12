@@ -40,31 +40,28 @@
                                     <action selector="pushhButtonStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eRF-8z-ms6"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="78" translatesAutoresizingMaskIntoConstraints="NO" id="Yyp-80-kLg">
-                                <rect key="frame" x="155" y="137" width="120" height="516"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="65" translatesAutoresizingMaskIntoConstraints="NO" id="Yyp-80-kLg">
+                                <rect key="frame" x="155" y="73" width="120" height="490"/>
                                 <subviews>
                                     <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fy7-5x-zoy" userLabel="redLights">
                                         <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                         <color key="backgroundColor" red="1" green="0.27831997879999998" blue="0.25100640769999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="120" id="AzF-EY-68H"/>
-                                            <constraint firstAttribute="height" constant="120" id="MOM-sK-Uti"/>
+                                            <constraint firstAttribute="width" secondItem="Fy7-5x-zoy" secondAttribute="height" multiplier="1:1" id="pc7-Gp-s68"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cuA-u5-7Y6" userLabel="yellowLights">
-                                        <rect key="frame" x="0.0" y="198" width="120" height="120"/>
+                                        <rect key="frame" x="0.0" y="185" width="120" height="120"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="120" id="inx-lU-dYx"/>
-                                            <constraint firstAttribute="width" constant="120" id="isW-nw-dNs"/>
+                                            <constraint firstAttribute="width" secondItem="cuA-u5-7Y6" secondAttribute="height" multiplier="1:1" id="axf-Mb-oPU"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uLR-Fk-TaQ" userLabel="greenLights">
-                                        <rect key="frame" x="0.0" y="396" width="120" height="120"/>
+                                        <rect key="frame" x="0.0" y="370" width="120" height="120"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="120" id="JgD-dF-nKp"/>
-                                            <constraint firstAttribute="width" constant="120" id="RdG-iS-cav"/>
+                                            <constraint firstAttribute="width" secondItem="uLR-Fk-TaQ" secondAttribute="height" multiplier="1:1" id="tiT-Nb-Cxc"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -74,10 +71,11 @@
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
                             <constraint firstItem="eTz-sX-7Qa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Lo-WY-Gf8"/>
-                            <constraint firstItem="Yyp-80-kLg" firstAttribute="top" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="78" id="Huj-6O-Uot"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="eTz-sX-7Qa" secondAttribute="bottom" constant="49" id="f3D-gC-4EW"/>
+                            <constraint firstItem="Yyp-80-kLg" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="30:233" id="Har-cb-ZdN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eTz-sX-7Qa" secondAttribute="bottom" constant="49" id="JL0-pg-WYr"/>
+                            <constraint firstItem="Fy7-5x-zoy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="14" id="L8Z-4G-piR"/>
                             <constraint firstItem="Yyp-80-kLg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kB8-ar-Rj8"/>
-                            <constraint firstItem="eTz-sX-7Qa" firstAttribute="top" relation="lessThanOrEqual" secondItem="Yyp-80-kLg" secondAttribute="bottom" constant="86" id="pYW-iq-Bzl"/>
+                            <constraint firstItem="Yyp-80-kLg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="n4b-p0-HX1"/>
                         </constraints>
                     </view>
                     <connections>
