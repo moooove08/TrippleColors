@@ -16,30 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTz-sX-7Qa">
-                                <rect key="frame" x="119.66666666666669" y="739" width="191" height="110"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="110" id="3xM-aV-TjP"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="191" id="kci-fm-T48"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" cornerStyle="capsule">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" red="1" green="0.87088657690000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </backgroundConfiguration>
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Start">
-                                            <attributes>
-                                                <font key="NSFont" metaFont="system" size="48"/>
-                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="pushhButtonStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eRF-8z-ms6"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="65" translatesAutoresizingMaskIntoConstraints="NO" id="Yyp-80-kLg">
                                 <rect key="frame" x="155" y="73" width="120" height="490"/>
                                 <subviews>
@@ -66,13 +42,32 @@
                                     </view>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTz-sX-7Qa">
+                                <rect key="frame" x="119.66666666666669" y="791" width="191" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="3xM-aV-TjP"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="191" id="kci-fm-T48"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".SFNS-Regular" family=".AppleSystemUIFont" pointSize="41"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.91819407256660768" green="0.19141454865419072" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="filled" title="Start">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="41"/>
+                                    <color key="baseForegroundColor" red="1" green="0.15827814276753893" blue="0.17214750091492148" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" systemColor="linkColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pushhButtonStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eRF-8z-ms6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
                             <constraint firstItem="eTz-sX-7Qa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Lo-WY-Gf8"/>
                             <constraint firstItem="Yyp-80-kLg" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="30:233" id="Har-cb-ZdN"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eTz-sX-7Qa" secondAttribute="bottom" constant="49" id="JL0-pg-WYr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eTz-sX-7Qa" secondAttribute="bottom" constant="37" id="JL0-pg-WYr"/>
                             <constraint firstItem="Fy7-5x-zoy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="14" id="L8Z-4G-piR"/>
                             <constraint firstItem="Yyp-80-kLg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kB8-ar-Rj8"/>
                             <constraint firstItem="Yyp-80-kLg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="n4b-p0-HX1"/>
@@ -91,8 +86,8 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

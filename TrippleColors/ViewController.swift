@@ -20,6 +20,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .black
+        
+        startButton.layer.cornerRadius = 10
+        startButton.backgroundColor = .blue
         redLights.alpha = 0.3
         yellowLights.alpha = 0.3
         greenLights.alpha = 0.3
@@ -34,6 +38,7 @@ class ViewController: UIViewController {
      
     }
     @IBAction func pushhButtonStart(_ sender: Any) {
+        
         startButton.setTitle("Next Light", for: .normal)
         
         
